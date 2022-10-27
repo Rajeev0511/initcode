@@ -106,3 +106,23 @@
     skosmos:defaultLanguage "de";
     void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
     skosmos:sparqlGraph <http://zbw.eu/stw/> .
+
+
+:cvmile a skosmos:Vocabulary, void:Dataset ;
+    dc:title "cvmiles"@en ;
+    skosmos:shortName "cvMil";
+    dc:subject :cat_migration ;
+    void:uriSpace "https://pid.test.net/rd/data/mile/";
+    void:dataDump <https://test.net/projects/ONRD/repos/vocabs/skosmos_cv.ttl> ;
+    skosmos:language "en","fr","de-at","de";
+    skosmos:defaultLanguage "en";
+    skosmos:groupClass skos:Collection;
+    skosmos:showTopConcepts true ;
+    skosmos:showChangeList false ;
+    skosmos:showDeprecated true ;
+    skosmos:showDeprecatedChanges true ;
+    skosmos:fullAlphabeticalIndex true ;
+    skosmos:loadExternalResources "false";
+    void:sparqlEndpoint <http://fuseki:9030/skosmos/sparql> ;
+    skosmos:sparqlGraph <https://pid.atest.net/rd/data/mile/> .
+
